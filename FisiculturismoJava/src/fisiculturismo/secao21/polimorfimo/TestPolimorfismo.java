@@ -7,7 +7,10 @@ public class TestPolimorfismo {
 		Animal horse = new Cavalo();
 		
 		dog.fazerSom();
+		dog.tipoObjeto();
 		cat.fazerSom();
+		cat.tipoObjeto();
 		horse.fazerSom();
+		horse.tipoObjeto();
 	}//end of main
 }//end of class

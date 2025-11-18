@@ -16,6 +16,9 @@ public class PrimeiroLambda {
 		
 		//exemplo de código com função lambda
 		listaDeNumeros.forEach((Integer numero) -> System.out.println(numero));
+		/*
+		 * é muito comum usar expressões lambda com colections
+		 */
 		
 	}//end of main
 }//end of class

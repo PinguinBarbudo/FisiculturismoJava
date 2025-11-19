@@ -1,0 +1,9 @@
+19/11/2025 20:14:19
+
+Esse é o tipo NIO
+
+Olá!
+
+Esse é um exemplo de arquivo escrito com a nova API NIO
+Essa API é mais moderna e tem uma boa vantagem de não bloquear o SO
+Portanto, não precisa fechar o método de escrita ou de leitura.

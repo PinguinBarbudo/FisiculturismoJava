@@ -1,0 +1,2 @@
+18 de novembro de 2025
+Primeiro arquivo escrito em java pelo input/output

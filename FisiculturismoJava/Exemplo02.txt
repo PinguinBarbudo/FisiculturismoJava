@@ -1,0 +1,21 @@
+public class BufferedReader 
+extends Reader
+Lê texto de um fluxo de entrada de caracteres, armazenando caracteres em buffer para permitir a leitura eficiente de caracteres, matrizes e linhas.
+O tamanho do buffer pode ser especificado ou o tamanho padrão pode ser usado. O tamanho padrão é suficiente para a maioria dos casos.
+
+Em geral, cada solicitação de leitura feita a um Reader causa uma solicitação de leitura correspondente ao fluxo de caracteres ou bytes subjacente. Portanto, é aconselhável envolver em um `Reader` BufferedReaderqualquer objeto Readercujas read()operações possam ser custosas, como FileReader`Reader` e InputStreamReader`Reader`. Por exemplo,
+
+BufferedReader in = new BufferedReader(new FileReader("foo.in"));
+
+irá armazenar em buffer a entrada do arquivo especificado. Sem o armazenamento em buffer, cada invocação de `read` read()ou `read` readLine()poderia fazer com que bytes fossem lidos do arquivo, convertidos em caracteres e, em seguida, retornados, o que pode ser muito ineficiente.
+Programas que usam DataInputStreamcaracteres especiais para entrada de texto podem ser localizados substituindo cada um DataInputStreampor um caractere apropriado BufferedReader.
+
+Nota sobre a API:
+Uma vez encapsulado em um `Reader` BufferedReader, o código subjacente Readernão deve ser usado diretamente nem encapsulado com outro leitor.
+Desde:
+1.1
+Veja também:
+FileReader
+InputStreamReader
+Files.newBufferedReader(Path, Charset)
+
